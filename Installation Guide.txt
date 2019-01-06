@@ -1,0 +1,7 @@
+Author: bleedblue777
+
+Installation Steps:
+1.Run the setup file and set the target directory for installation.
+2.Copy the dbConfig.json file to the installation directory.
+
+P.S: Don't delete the dbConfig file :)

@@ -1,0 +1,64 @@
+{
+  "name": "PoliTriks",
+  "productName": "PoliTriks Election Software",
+  "version": "1.0.0",
+  "description": "PoliTriks Election Software",
+  "author": "bleedblue777",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js",
+    "pack": "build --dir",
+    "dist": "build -w --x64 --ia32",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "ship": "build --win -p always"
+  },
+  "build": {
+    "appId": "com.Electron.Datatron",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/home.ico"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": true
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.6",
+    "electron-builder": "^20.13.4",
+    "electron-packager": "^12.0.2"
+  },
+  "dependencies": {
+    "electron-updater": "^4.0.6",
+    "jquery": "^3.3.1",
+    "msnodesqlv8": "^0.6.6",
+    "mssql": "^4.1.0",
+    "mysql": "^2.15.0",
+    "npm": "^6.5.0",
+    "semantic-ui": "^2.3.2"
+  }
+}

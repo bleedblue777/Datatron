@@ -1,0 +1,71 @@
+{
+	"dbdriver": "msnodesqlv8",
+	"dbserver": "localhost\\SQLExpress",
+	"dbdatabase": "ac_128_full",
+	"dboptions": {
+		"trustedConnection": true
+	},
+	"port": "57951",
+
+	"ac": "152",
+
+	"ac_details": {
+
+		"ac_db": "152_full",
+		"ac_table": "AC152",
+		"ac_no": "AC_NO",
+		"part_no": "PART_NO",
+		"serial_no": "SLNOINPART",
+		"house_no_v1": "HOUSE_NO_V1",
+		"house_no_en": "HOUSE_NO_EN",
+		"section_no": "SECTION_NO",
+		"first_name_v1": "fm_name_v1",
+		"last_name_v1": "Lastname_v1",
+		"rln_type": "RLN_TYPE",
+		"rln_fm_nm_v1": "RLN_FM_NM_v1",
+		"rln_l_nm_v1": "RLN_L_NM_v1",
+		"id_card_no": "IDCARD_NO",
+		"aadhar_no": "AADHAAR_NO",
+		"status_type": "STATUSTYPE",
+		"sex": "SEX",
+		"age": "AGE",
+		"first_name_en": "FM_NAMEEN",
+		"last_name_en": "LASTNAMEEN",
+		"rln_fm_nm_en": "RLN_FM_NMEN",
+		"rln_l_nm_en": "RLN_L_NMEN",
+		"dob": "DOB",
+		"mobile_no": "mobileno",
+		"passport_no": "passport_no",
+		"email_id": "emailid",
+		"voter_status": "voter_status"
+	},
+
+	"control_details": {
+		"control_db": "control2018",
+		"section_table": "SEC_DETAIL",
+		"part_table": "NEWPARTLIST",
+		"booth_table": "PSBUILDINGS",
+		"tahsil_table": "tahsils",
+		"village_table": "villages",
+
+		"c_code": "CCODE",
+		"st_code": "ST_CODE",
+		"ac_no": "ac_no",
+		"psbuilding_no": "PSBUILDING_NO",
+		"psbuildings_id": "PSBUILDINGS_ID",
+		"ps_building_name_v1": "PSBUILDING_NAME_V1",
+		"ps_building_name_en": "PSBUILDING_NAME_EN",
+		"ps_locn_no_section_id": "PSLOCN_NO_SECTIONID",
+		"ac_no_old": "AC_NO_OLD",
+		"psbuilding_no_old": "PSBUILDING_NO_OLD",
+		"psbuilding_id_old": "PSBUILDING_ID_OLD"
+	},
+
+	"sec_details": {
+		"ac_no": "AC_NO",
+      	"part_no": "PART_NO",
+      	"section_no": "SECTION_NO",
+      	"section_name": "SECTION_NAME_EN",
+      	"pin_code": "PINCODE"
+	}
+}
